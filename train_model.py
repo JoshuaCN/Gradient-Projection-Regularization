@@ -275,15 +275,15 @@ if __name__ == '__main__':
             i = np.random.choice([0, 2, 3])  # ！！！
 
             # PGD Adversarial Training
-            # adv_train(model,x,y,adv_params='pgd_76_10_8',random_init=True) #！！！用cifar的时候，把'76_10_8'改成'8_2_7'
+            # adv_train(model,x,y,adv_params='pgd_76_10_8',random_init=True) #！！！
 
             # Ensemble Adversarial Training
             ## x_adv = generate_adversarial_examples(x, bounds, source[i], 'pgd_76_76_1', random_init=False)
             ## normal_train(model,x,y)
-            # ens_train(source[i],model,x,y,adv_params='pgd_76_76_1',random_init=False) #！！！ 用cifar的时候，把'76_76_1'改成'8_8_1'
+            # ens_train(source[i],model,x,y,adv_params='pgd_76_76_1',random_init=False) #！！！ 
 
             # Projection Regularization
-            pr_train(source[i], model, x, y, alpha=0.3, beta=10, sigma=sigma)  # ！！！ 改alpha和beta
+            pr_train(source[i], model, x, y, alpha=0.3, beta=10, sigma=sigma)  # ！！！ 
 
             # Combination 1
             # x_adv = generate_adversarial_examples(x, bounds, source[i], 'pgd_76_76_1', random_init=True)
