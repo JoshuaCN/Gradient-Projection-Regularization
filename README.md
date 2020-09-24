@@ -12,8 +12,9 @@ Intuitively, transferability occurs when two models share similar decision bound
 | ----- | ----- | ----- | ----- |
 | Normal Training | 99.1 | 70.2/38.2/19.3	| 53.1/13.1/3.4 |
 | Projection Regularization | 97 |	88.5/78/60.8 |	87.4/75.7/56.1 |
-| Ensemble Adv Training | 98.8	95.1/89/68.1 |	95/79.8/38.5 |
-| PGD Adv Training | 99.1	97.1/95.2/38.2 |	97.1/95.6/29.2 |
+| Ensemble Adv Training | 98.8	| 95.1/89/68.1 |	95/79.8/38.5 |
+| PGD Adv Training | 99.1 |	97.1/95.2/38.2 |	97.1/95.6/29.2 |
+
 Projection Regularization can be more stable when perturbation size is large, moreover, it's possible that we combine projection regularization and adversarial training to achieve better performance.
 ## How to use
 ```
