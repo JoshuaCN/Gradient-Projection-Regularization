@@ -7,7 +7,9 @@ Intuitively, transferability occurs when two models share similar decision bound
 
 <img src="assets/gradient_projection.png" width = "50%" height = "50%" alt="gradient_projection" />
 
-
+## Compared to other defenses
+| Model | Clean Accuracy |FGSM(0.1,0.2,0.3) Accuracy|PGD(0.1,0.2,0.3) Accuracy|
+| Normal Training | 99.1 | 70.2/38.2/19.3	| 53.1/13.1/3.4 |
 
 ## How to use
 ```
@@ -29,5 +31,5 @@ Generating PGD adversarial examples, used for adversarial training.
 
 ## Dependencies
 - tensorflow >= 2.0
-- [adversarial robustness toolbox](https://github.com/albermax/innvestigate)(for evaluation)
+- [adversarial robustness toolbox](https://github.com/Trusted-AI/adversarial-robustness-toolbox)(for evaluation)
 
