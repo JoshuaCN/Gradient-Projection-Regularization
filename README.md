@@ -8,7 +8,7 @@ Intuitively, transferability occurs when two models share similar decision bound
 <img src="assets/gradient_projection.png" width = "50%" height = "50%" alt="gradient_projection" />
 
 ## Robustness Comparison on MNIST
-| Model | Clean Accuracy |FGSM(0.1,0.2,0.3) Accuracy|PGD(0.1,0.2,0.3) Accuracy|
+| Model | Clean Accuracy |FGSM(0.2,0.3,0.4) Accuracy|PGD(0.2,0.3,0.4) Accuracy|
 | ----- | ----- | ----- | ----- |
 | Normal Training | 99.1 | 70.2/38.2/19.3	| 53.1/13.1/3.4 |
 | Projection Regularization | 97 |	88.5/78/60.8 |	87.4/75.7/56.1 |
